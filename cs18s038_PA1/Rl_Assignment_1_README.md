@@ -1,3 +1,3 @@
-All algos are implemented as a different function.\\
-All variable and function names are chosen in a self commenting way.
+All algos are implemented as a different function. <br />
+All variable and function names are chosen in a self commenting way.<br />
 Please read report for detai.
