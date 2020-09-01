@@ -51,7 +51,7 @@
    * Visualisation of V-values.
    * Analysis of Observations and Inference
    
-   ![picture alt](https://miro.medium.com/freeze/max/1200/1*oMSg2_mKguAGKy1C64UFlw.gif "Title is optional")
+   ![picture alt](https://thumbs.gfycat.com/GreedyJampackedBlackfish-size_restricted.gif "Title is optional")
     
    ##### Balancing CartPole
    Problem solved using DQN model.
