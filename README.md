@@ -22,7 +22,10 @@
     
     * Implementation of Policy gradient on below environments.
       Experiment involves-
-      *  kjnl
+      *  Hyper parameter tuning.
+      *  Value function visualisation.
+      *  Trajectory and policy.
+      *  Inference from observation .
     
     <object data="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_3.pdf" width="700px" height="700px">
     <embed src="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_3.pdf">
