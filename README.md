@@ -10,4 +10,5 @@
     * Implementation of Sarsa for different goals and related plots in puddle world.
     * Implementation of Q-Learning for different goals and related plots in puddle world.
     * Implementation of Sarsa Lambda for different goals and related plots in puddle world.
+    ![picture alt](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS2CqTEfqQK69yCxDokmQvbhvpemkY7yfAhOA&usqp=CAU "Title is optional")
     
