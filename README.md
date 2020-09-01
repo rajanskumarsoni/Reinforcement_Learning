@@ -24,7 +24,7 @@
     
     ![picture alt](https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/extras/Screenshot%20from%202020-09-01%2022-08-18.png "Title is optional")
     
-    * Implementation of Policy gradient on below environments.
+    * Implementation of Policy gradient on above environments.
       Experiment involves-
       *  Hyper parameter tuning.
       *  Value function visualisation.
