@@ -1,6 +1,6 @@
 # Reinforcement_Learning
 ### Here is the list of course projects done during Reinforcement Learning course. ###
-1. cs18s038_PA1 Course Project
+1. <b>cs18s038_PA1 Course Project</b>
     * Implementation of epsilon-greedy and related plots.
     * Implementation of soft-max algorithm and related plots.
     * Implementation of UCB1 algorithm and comparing with epsilon-greedy and soft-maxand related plots.
@@ -37,7 +37,7 @@
     </embed>
    </object>
  
- 3. cs18s038_PA3 Course Project
+ 3. <b>cs18s038_PA3 Course Project</b>
     
     
     
