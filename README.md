@@ -12,30 +12,7 @@
     </embed>
    </object>
 2. <b>cs18s038_PA2 Course Project</b>
-    #### PUDDLE WORLD! ####
-    
-    
-    ![picture alt](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS2CqTEfqQK69yCxDokmQvbhvpemkY7yfAhOA&usqp=CAU "Title is optional")
-    
-    * Implementation of Sarsa for different goals and related plots in puddle world.
-    * Implementation of Q-Learning for different goals and related plots in puddle world.
-    * Implementation of Sarsa Lambda for different goals and related plots in puddle world.
-    
-    
-    ![picture alt](https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/extras/Screenshot%20from%202020-09-01%2022-08-18.png "Title is optional")
-    
-    * Implementation of Policy gradient on above environments.
-      Experiment involves-
-      *  Hyper parameter tuning.
-      *  Value function visualisation.
-      *  Trajectory and policy.
-      *  Inference from observation .
-    
-      <object data="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_2.pdf" width="700px" height="700px">
-    <embed src="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_2.pdf">
-   <p><b>Note:</b> For more detailed analysis of each observation and inferernce drawn from it, Please have a look at full report  <a href="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_2.pdf">Click here</a>.</p>
-    </embed>
-   </object>
+
    
    
    
