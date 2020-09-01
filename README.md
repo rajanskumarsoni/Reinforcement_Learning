@@ -36,7 +36,6 @@
    <p><b>Note:</b> For more detailed analysis of each observation and inferernce drawn from it, Please have a look at full report  <a href="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_2.pdf">Click here</a>.</p>
     </embed>
    </object>
- 
 3. <b>cs18s038_PA3 Course Project</b>
     
     
