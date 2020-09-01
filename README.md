@@ -43,7 +43,7 @@
 3.<b>cs18s038_PA3 Course Project</b>
    #### Learning with options
    
-   ![picture alt](https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/extras/Screenshot%20from%202020-09-01%2023-46-35.png"Title is optional")
+   ![picture alt](https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/extras/Screenshot%20from%202020-09-01%2023-46-35.png "Title is optional")
    
    * Implementation of SMDP-Q Learning.
    * Implementation of Intra option Q-Learning.
