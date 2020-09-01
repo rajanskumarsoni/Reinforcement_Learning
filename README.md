@@ -19,9 +19,10 @@
     
     
     ![picture alt](https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/extras/Screenshot%20from%202020-09-01%2022-08-18.png "Title is optional")
+    
     <object data="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_3.pdf" width="700px" height="700px">
     <embed src="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_3.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_3.pdf">Download PDF</a>.</p>
     </embed>
    </object>
     
