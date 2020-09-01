@@ -50,6 +50,14 @@
    * Visualisation of Q-values.
    * Visualisation of V-values.
    * Analysis of Observations and Inference
+   
+   ##### Balancing CartPole
+   Problem solved using DQN model.
+   Experiment involves-
+   *  Implementation of DQN and related plots.
+   *  Best hyperparameters.
+   *  Observations and inference.
+   *  Playing with Replay memory and Target network  .
     
     
     
