@@ -21,7 +21,8 @@
     ![picture alt](https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/extras/Screenshot%20from%202020-09-01%2022-08-18.png "Title is optional")
     
     * Implementation of Policy gradient on below environments.
-      *  kjnk
+      Experiment involves-
+      *  kjnl
     
     <object data="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_3.pdf" width="700px" height="700px">
     <embed src="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_3.pdf">
