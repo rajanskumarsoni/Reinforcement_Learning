@@ -29,7 +29,7 @@
     
     <object data="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_3.pdf" width="700px" height="700px">
     <embed src="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_3.pdf">
-        <p> For more detailed analysis of each observation and inferernce drawn from it, Please have a look at full report  <a href="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_3.pdf">Click here</a>.</p>
+   <p><b>Note:</b> For more detailed analysis of each observation and inferernce drawn from it, Please have a look at full report  <a href="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_3.pdf">Click here</a>.</p>
     </embed>
    </object>
     
