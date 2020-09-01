@@ -1,0 +1,392 @@
+Delivered-To: cs18s038@smail.iitm.ac.in
+Received: by 2002:a9d:19e5:0:0:0:0:0 with SMTP id k92csp742710otk;
+        Wed, 8 Jul 2020 13:27:44 -0700 (PDT)
+X-Received: by 2002:a92:cc41:: with SMTP id t1mr45901577ilq.132.1594240064166;
+        Wed, 08 Jul 2020 13:27:44 -0700 (PDT)
+ARC-Seal: i=3; a=rsa-sha256; t=1594240064; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=T4tRQ0Hw/1BhDj8bpnLjTlO4/FITm39SSn+CgoQHSgDwt2guiIiD8QHXgAgiLxBtQi
+         KiJ7OS1LVuIS2kwSf2aZv0XYSL3srCR/SxX5ZU47QZTILkfhdciXLmJ7Gwy8eYcChVpy
+         6dMSyux9o7cjaMaIx0OYjOKsW81c6ngOJY6sHLWe/RCa+cZxsoauKR8zZZmXj0DNUCBt
+         p99g9Wi1FJZy2LJYFYO3+rIALlsxpXEsXun7b2U2By/B2S8hUib0IshRv1LOf00UqJc3
+         kZ+F096FVo1bKkexXDWudfVIlEb6Qmwlo3SN/aD1jgye4qh/mn5J+sQBGuxzLQSGwqdv
+         ai3w==
+ARC-Message-Signature: i=3; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:to:subject:message-id:date:from:in-reply-to
+         :references:mime-version:sender:dkim-signature:dkim-signature;
+        bh=ARyuniG1y8C7Mqwc54imBIB4ro5AheAQbEMWk0Glbik=;
+        b=ERSjrzJyysJdPgVjDXXzKfR7vYpXfO/38iXiOGWtqZc3zT2VX9kUuPbuCtadHt+ie/
+         ctSJaRsGh+jJ2+cy0YVCodU52Gb2pyPUhbHH3RPNKlBmLm5ZDtJ4s+WApEeLsntWm8uw
+         +JsOqmj69KIVvpc7In0RMWF9fdLlNAXf6uF7/mqOoumpZrn1412959/VjgNjqok6kjSY
+         SmyLFRqjaL1cPYzVY7zDkxtj7o5QafKrZgUhUYjNbOeNVCxIiaPsrHrwAleJJAHDgnk2
+         A/bjVzuuCfAznQnyImnl/9vAvf/PpzZJM5My4g4k7tVDGLubYzx3Oz8iwNKlHc8QjMzg
+         jE4w==
+ARC-Authentication-Results: i=3; mx.google.com;
+       dkim=pass header.i=@googlegroups.com header.s=20161025 header.b=Mjv1vUfs;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=I06OBfRX;
+       arc=pass (i=2 spf=pass spfdomain=gmail.com dkim=pass dkdomain=gmail.com dmarc=pass fromdomain=gmail.com);
+       spf=pass (google.com: domain of iil-current+bncbcomx4oq4elbbp6ytd4akgqe6mouz3y@googlegroups.com designates 209.85.220.55 as permitted sender) smtp.mailfrom=iil-current+bncBCOMX4OQ4ELBBP6YTD4AKGQE6MOUZ3Y@googlegroups.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <iil-current+bncBCOMX4OQ4ELBBP6YTD4AKGQE6MOUZ3Y@googlegroups.com>
+Received: from mail-sor-f55.google.com (mail-sor-f55.google.com. [209.85.220.55])
+        by mx.google.com with SMTPS id s82sor244702iod.74.2020.07.08.13.27.43
+        (Google Transport Security);
+        Wed, 08 Jul 2020 13:27:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of iil-current+bncbcomx4oq4elbbp6ytd4akgqe6mouz3y@googlegroups.com designates 209.85.220.55 as permitted sender) client-ip=209.85.220.55;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@googlegroups.com header.s=20161025 header.b=Mjv1vUfs;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=I06OBfRX;
+       arc=pass (i=2 spf=pass spfdomain=gmail.com dkim=pass dkdomain=gmail.com dmarc=pass fromdomain=gmail.com);
+       spf=pass (google.com: domain of iil-current+bncbcomx4oq4elbbp6ytd4akgqe6mouz3y@googlegroups.com designates 209.85.220.55 as permitted sender) smtp.mailfrom=iil-current+bncBCOMX4OQ4ELBBP6YTD4AKGQE6MOUZ3Y@googlegroups.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+ARC-Seal: i=2; a=rsa-sha256; t=1594240063; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=G0Y/SCRld5ncAZUNUgc+O22GhYK6mlQAL10ULe63DGX8N0Yq/hoABgiSyy5ubOA3le
+         JDGdGZAr1epetpIPJ8gjZ9LOVTnXXy9Wkh/I1SqVOKgpoWuWIipuPCjsvgNOPxZlTyNg
+         EC5QBRxtlnfrkg75JgjAbqmtwy8FQO0M2oWLgNXeb0TyOKi6aQRHkbb25djW85JrE72Q
+         leLZeb769IwfaVt4LHJg+HEcuH+UJY6YN/NSL4mzg9weS6KfOsy3VMdg85DWEHm0sehL
+         +aFi92efrcydT9Z5XXElgGuBIFjnN9wpJCZ7dWQzt/hjJg8sqUzirtGgFrYncVpA+sD6
+         jKSw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:to:subject:message-id:date:from:in-reply-to
+         :references:mime-version:sender:dkim-signature:dkim-signature;
+        bh=ARyuniG1y8C7Mqwc54imBIB4ro5AheAQbEMWk0Glbik=;
+        b=VFTEI3tC8rnbDgOHpp15ec5Y+2UZwjode1KrBUKqE+zhCROJyZ/89MpP4SyFraGjJh
+         UiWHeXhObhKhSe8Zqiq6O4FA2bhLLG1p/MZcNMLCITGD+n6kSUuHwx+DyLpqZZY3MG5j
+         7ARc0yfKhCs+vJp6iYYsX9s8APwfT8TeRKk9Fflg1HXqhUY/iHRuiFwpPuLkpch8/Arh
+         s2b+rAAj2TueIYN0m6QbQUPe0CztNwf8zaogP/lrdlQYbSG0ZPvPHdPrBxu+p1r0nNUv
+         wfk2yB6vxJY0pgke4E/DCuTo/PD7dhphXxV5Gb1iWY4Huon36gcs/ygdGeaE6KtcgGF5
+         73gA==
+ARC-Authentication-Results: i=2; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="eQlhmK/C";
+       spf=pass (google.com: domain of ravindran.b@gmail.com designates 2607:f8b0:4864:20::d30 as permitted sender) smtp.mailfrom=ravindran.b@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=20161025;
+        h=sender:mime-version:references:in-reply-to:from:date:message-id
+         :subject:to:x-original-sender:x-original-authentication-results
+         :precedence:mailing-list:list-id:list-post:list-help:list-archive
+         :list-unsubscribe;
+        bh=ARyuniG1y8C7Mqwc54imBIB4ro5AheAQbEMWk0Glbik=;
+        b=Mjv1vUfsOhFHVhlKk2Fej30UtcRschm7d8rNt5wyAoEREJE1EP0ACIzeAWVdcjvL8Y
+         OsPJu+LRsic0mQeFotLj3vkJFGjQMYa8fLoV3xTrobh71GfTkwAK+eg2X8/vAv46oMho
+         edfEd8KITIXnL6QlahJeI47RZj+D40DQWLuQOnYf1nzTWeO7hb0dwjS8WKwic2V5rsBb
+         yM2XH9nRkBh9q3HoJSdUFbG390XGR1Gf2hn21EdLpUUERCnLnBNMlgGLOuOb/21dqlss
+         RTijtYinK0q3E2NvrZusli0eE6azQ3+et7cvROA5ReW3OJQKLWtuHHauClTOcf8XHLfF
+         Y1LA==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :x-original-sender:x-original-authentication-results:precedence
+         :mailing-list:list-id:list-post:list-help:list-archive
+         :list-unsubscribe;
+        bh=ARyuniG1y8C7Mqwc54imBIB4ro5AheAQbEMWk0Glbik=;
+        b=I06OBfRXq6KyvaZjanvbkG6x8fCv2upYxaIhEl8Dde1ClJAgek/UYSCRYPyBKvipBJ
+         6U5isY3nTy62oA6ZsuCrv0d3hYNGS3mSP3KyMFKEHFI8ndqrgHRLg7ew36Z0b0yAwOuk
+         VyEy7zXfytMpf/7BuNpI0JFxiWA3ZBtngQaVcnO9kwR4lmyx9U1NKS5CqfVSrDQIWqVW
+         F03oLF13T1W8z8JlHda8TPLWz3PIxxxuEqLgOUHs/Q2TnynoqEcowteJrhKAjhIRlAT1
+         Qjyy58qdsvV/vQZAMMB3z7ZJWmhz8k1Z52Mw5RnYHSd9hAlrsDfQTCwLZdtmdTsy7hqZ
+         Wl2g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=sender:x-gm-message-state:mime-version:references:in-reply-to:from
+         :date:message-id:subject:to:x-original-sender
+         :x-original-authentication-results:precedence:mailing-list:list-id
+         :x-spam-checked-in-group:list-post:list-help:list-archive
+         :list-unsubscribe;
+        bh=ARyuniG1y8C7Mqwc54imBIB4ro5AheAQbEMWk0Glbik=;
+        b=OcknP9H8/S5zcALUbP5uZaw8NNNLoVXHSnbmZ4TJR9BANj2WMpeP/IuNrEbWolx/WR
+         2X3nYaXLwGG4XC4KCyLuOc0WBuGzJIqalHKGyspgTRO5HH92bFh5DQV0hefyZb0cYbBG
+         lFAkm1CYZJzk07zgP2mzqkJKMklCawufqD0rHUBDROxgz2BEVWJBYPlgDh7d9J99F8UM
+         35u/kyfKnQ7QjrcQqlxEs8PjofL5dLjPYtGdweAHvuhwkd0o7AONDlMIdlZgRWjtxAQY
+         Ik1obrcaPhCpGoQGfgoq3/ZFKfrQepQ6r3i8KTeRhtsqFrOar18zn9oNwUB3W5le4IIf
+         /y3A==
+Sender: iil-current@googlegroups.com
+X-Gm-Message-State: AOAM531831n1q2lSiy1vA3Iuc1//UYKRcp7ayyK5kBjyCrITY/cwZcBU
+	DYdRQ8RYdMyp5GMxUzjVm0o=
+X-Google-Smtp-Source: ABdhPJwpIxpegYAwIbV9mt7DnZoUwzbeb/sjAyVqaVDSHTYP/HnXbX7k2Qg2BcCO3Mwz3wLLhtqF8g==
+X-Received: by 2002:a02:9182:: with SMTP id p2mr21345162jag.69.1594240063123;
+        Wed, 08 Jul 2020 13:27:43 -0700 (PDT)
+X-BeenThere: iil-current@googlegroups.com
+Received: by 2002:a05:6638:d0a:: with SMTP id q10ls547598jaj.5.gmail; Wed, 08
+ Jul 2020 13:27:42 -0700 (PDT)
+X-Received: by 2002:a05:6638:1511:: with SMTP id b17mr60796238jat.113.1594240062767;
+        Wed, 08 Jul 2020 13:27:42 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1594240062; cv=none;
+        d=google.com; s=arc-20160816;
+        b=qZXoqbVcj/9cP5izNFC1UYpjd41ejPC9a61K3ZS9pllCBuX3E0WljuB7021b1VrGkB
+         jFSj8sjQQYs93IPVJ0xjcdgk+M7o34bOlZxjYe71RrK60WfJ5jqekUPDxwz0YeuDgRZP
+         NHdt1V6FbnnqxITJQXTAW8m6rcEOroQIQvPoTdU9bvVpLDbozPIq9Glb0H76aPYbYuKk
+         NK6CU+yDuXhN6VoO407tkiNQfu7vM6W4RC56eIQQ/xPiB/ioFkVi2HnDjhygs4zELcCb
+         RrEqClOam+SUjqmFmf6PZqr+IaBGWhDa5zRK7eiU1EwYl8SGBFJFJ3cR7JQJ4kkh6pHu
+         LLCg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=2liE0RTyHBeNjlooKH1H+exFzdgHcG4JOwA8/W+z4Us=;
+        b=tSqyiY+5k9ZCSK28rHeIECagRltiMdpgDbvhYY0ZPjNT7CLqfnaj28XUrESMGnMHfC
+         vOaH76+jLCvCFB6HRuET475VXhSnAPP1qNGj7ewUyJNZz3SHcWzUy7YbPdWKj2pc63FG
+         B/j9DZKYpcX8tTKKKLAwqA8wmPit78W3D7hojktdSa04vszIxFGlg5aNpaNfKrxOjivY
+         1WQm8xiXbQxlgohoJlt9mx1CpXlvVQPfhLGzd8V9ruw5N54PKfNHLsIVFGztKIxk7f8g
+         9o5tY7BzkeXDPQJBhHelRFdskQmwZNoIXqLoNLuN4jhNy/UX9BEE6p4wt/fKGs4qoE6B
+         7vmA==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="eQlhmK/C";
+       spf=pass (google.com: domain of ravindran.b@gmail.com designates 2607:f8b0:4864:20::d30 as permitted sender) smtp.mailfrom=ravindran.b@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: from mail-io1-xd30.google.com (mail-io1-xd30.google.com. [2607:f8b0:4864:20::d30])
+        by gmr-mx.google.com with ESMTPS id t7si54470ilh.2.2020.07.08.13.27.42
+        for <iil-current@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 08 Jul 2020 13:27:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of ravindran.b@gmail.com designates 2607:f8b0:4864:20::d30 as permitted sender) client-ip=2607:f8b0:4864:20::d30;
+Received: by mail-io1-xd30.google.com with SMTP id q8so48448741iow.7
+        for <iil-current@googlegroups.com>; Wed, 08 Jul 2020 13:27:42 -0700 (PDT)
+X-Received: by 2002:a05:6638:1488:: with SMTP id j8mr39511743jak.123.1594240062164;
+ Wed, 08 Jul 2020 13:27:42 -0700 (PDT)
+MIME-Version: 1.0
+References: <ec3a7d46-bd3b-40fc-bbb0-8edc733646b8n@googlegroups.com>
+In-Reply-To: <ec3a7d46-bd3b-40fc-bbb0-8edc733646b8n@googlegroups.com>
+From: "B. Ravindran" <ravindran.b@gmail.com>
+Date: Thu, 9 Jul 2020 01:58:08 +0530
+Message-ID: <CAJ0BqjjPNzVkEoqSDPLcmSjdXRZSZyNLR5J9X3FqQJWe=OP68Q@mail.gmail.com>
+Subject: Fwd: [rl-list] [news] Participate in the NeurIPS 2020 MineRL
+ Reinforcement Learning Competition!
+To: iil-current <iil-current@googlegroups.com>, 
+	SRIJAN REDDY VASA <srijanreddy.v16@iiits.in>
+Content-Type: multipart/alternative; boundary="00000000000097945a05a9f3f029"
+X-Original-Sender: ravindran.b@gmail.com
+X-Original-Authentication-Results: gmr-mx.google.com;       dkim=pass
+ header.i=@gmail.com header.s=20161025 header.b="eQlhmK/C";       spf=pass
+ (google.com: domain of ravindran.b@gmail.com designates 2607:f8b0:4864:20::d30
+ as permitted sender) smtp.mailfrom=ravindran.b@gmail.com;       dmarc=pass
+ (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Precedence: list
+Mailing-list: list iil-current@googlegroups.com; contact iil-current+owners@googlegroups.com
+List-ID: <iil-current.googlegroups.com>
+X-Spam-Checked-In-Group: iil-current@googlegroups.com
+X-Google-Group-Id: 306797612609
+List-Post: <https://groups.google.com/group/iil-current/post>, <mailto:iil-current@googlegroups.com>
+List-Help: <https://groups.google.com/support/>, <mailto:iil-current+help@googlegroups.com>
+List-Archive: <https://groups.google.com/group/iil-current
+List-Unsubscribe: <mailto:googlegroups-manage+306797612609+unsubscribe@googlegroups.com>,
+ <https://groups.google.com/group/iil-current/subscribe>
+
+--00000000000097945a05a9f3f029
+Content-Type: text/plain; charset="UTF-8"
+
+---------- Forwarded message ---------
+From: Stephanie Milani <stemila1@umbc.edu>
+Date: Thu, Jul 9, 2020 at 1:21 AM
+Subject: [rl-list] [news] Participate in the NeurIPS 2020 MineRL
+Reinforcement Learning Competition!
+To: Reinforcement Learning Mailing List <rl-list@googlegroups.com>
+
+
+Hi all,
+
+We are organizing the second-annual MineRL Competition on Sample Efficient
+Reinforcement Learning at NeurIPS 2020 in collaboration with Carnegie
+Mellon University, OpenAI, DeepMind, Preferred Networks, AIcrowd, and
+Microsoft Research. The first round is now officially open for submissions.
+Please consider participating!
+
+Information about the competition is below.
+
+Thanks,
+Stephanie Milani
+Machine Learning PhD Student, Carnegie Mellon University
+
+--------------------------------------------------
+
+*The 2020 MineRL Competition on Sample Efficient Reinforcement Learning
+using Human Priors*
+
+Competition website: http://minerl.io/competition/
+
+Competition Twitter: @minerl_official
+
+*Abstract:*
+
+Although deep reinforcement learning has led to breakthroughs in many
+difficult domains, these successes have required an ever-increasing number
+of samples. Many of these systems cannot be applied to real-world problems,
+where environment samples are expensive. Resolution of these limitations
+requires new, sample-efficient methods. To facilitate research in this
+direction, we are holding the MineRL Competition on Sample Efficient
+Reinforcement Learning using Human Priors.
+
+The primary goal of this competition is to foster the development of
+algorithms which can efficiently leverage human demonstrations to
+drastically reduce the number of samples needed to solve complex,
+hierarchical, and sparse environments. Participants will compete to develop
+systems which solve the challenging task of obtaining a diamond in
+Minecraft using a limited number of samples from the environment.
+
+This year, we have two competition tracks: the Demonstrations and
+Environment track and the Demonstrations Only track. In the former track,
+competitors may use the MineRL dataset and 8 million environment
+interactions to train their agents. In the latter track, competitors cannot
+use any environment interactions to train their agent: they must rely
+solely on the MineRL-v0 dataset.
+
+*Important Dates:*
+
+Jul 1, 2020:  Round 1 Begins. Participants invited to download starting
+materials and baseline and to begin developing their submission.
+
+Sep, 2020: Round 1 Ends. Submissions for consideration into entry into the
+final round are closed. Models will be evaluated by competition organizers.
+Official results posted.
+
+Sep, 2020: Round 2 Begins. Finalists invited to submit their models against
+the held out validation texture pack.
+
+Nov, 2020: Round 2 Ends. Submissions for finalists are closed. Organizers
+train finalists latest submissions for evaluation. Official results posted.
+
+Dec 6, 2020:  NeurIPS 2020! Winning teams invited to the (virtual)
+conference to present their results. Awards distributed.
+
+*Organizers:*
+
+William H. Guss, Brandon Houghton, Stephanie Milani, Nicholay Topin, Ruslan
+Salakhutdinov, John Schulman, Mario Ynocente Castro, Crissman Loomis,
+Keisuke Nakata, Shinya Shiroshita, Avinash Ummadisingu, Sharada Mohanty,
+Sam Devlin, Noboru Sean Kuno, and Oriol Vinyals.
+
+*Advisors:*
+
+Fei Fang, Zachary Chase Lipton, Manuela Veloso, David Ha, Chelsea Finn,
+Anca Dragan, and Sergey Levine.
+
+-- 
+You received this message because you are subscribed to the "Reinforcement
+Learning Mailing List" group.
+To post to this group, send email to rl-list@googlegroups.com
+To unsubscribe from this group, send email to
+rl-list-unsubscribe@googlegroups.com
+For more options, visit this group at
+http://groups.google.com/group/rl-list?hl=en
+---
+You received this message because you are subscribed to the Google Groups
+"Reinforcement Learning Mailing List" group.
+To unsubscribe from this group and stop receiving emails from it, send an
+email to rl-list+unsubscribe@googlegroups.com.
+To view this discussion on the web visit
+https://groups.google.com/d/msgid/rl-list/ec3a7d46-bd3b-40fc-bbb0-8edc733646b8n%40googlegroups.com
+<https://groups.google.com/d/msgid/rl-list/ec3a7d46-bd3b-40fc-bbb0-8edc733646b8n%40googlegroups.com?utm_medium=email&utm_source=footer>
+.
+
+-- 
+You received this message because you are subscribed to the Google Groups "iil-current" group.
+To unsubscribe from this group and stop receiving emails from it, send an email to iil-current+unsubscribe@googlegroups.com.
+To view this discussion on the web visit https://groups.google.com/d/msgid/iil-current/CAJ0BqjjPNzVkEoqSDPLcmSjdXRZSZyNLR5J9X3FqQJWe%3DOP68Q%40mail.gmail.com.
+
+--00000000000097945a05a9f3f029
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_default" style=3D"font-size:small"><br=
+></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr"=
+>---------- Forwarded message ---------<br>From: <strong class=3D"gmail_sen=
+dername" dir=3D"auto">Stephanie Milani</strong> <span dir=3D"auto">&lt;<a h=
+ref=3D"mailto:stemila1@umbc.edu">stemila1@umbc.edu</a>&gt;</span><br>Date: =
+Thu, Jul 9, 2020 at 1:21 AM<br>Subject: [rl-list] [news] Participate in the=
+ NeurIPS 2020 MineRL Reinforcement Learning Competition!<br>To: Reinforceme=
+nt Learning Mailing List &lt;<a href=3D"mailto:rl-list@googlegroups.com">rl=
+-list@googlegroups.com</a>&gt;<br></div><br><br><div>Hi all,</div><div><br>=
+</div><div>We are organizing the second-annual MineRL Competition on Sample=
+ Efficient Reinforcement Learning at NeurIPS 2020 in collaboration with Car=
+negie Mellon University, OpenAI, DeepMind, Preferred Networks, AIcrowd, and=
+ Microsoft Research. The first round is now officially open for submissions=
+. Please consider participating!=C2=A0</div><div><br></div><div>Information=
+ about the competition is below.</div><div><br></div><div>Thanks,</div><div=
+>Stephanie Milani</div><div>Machine Learning PhD Student, Carnegie Mellon U=
+niversity</div><div><br></div><div>----------------------------------------=
+----------</div><div><br></div><div><b>The 2020 MineRL Competition on Sampl=
+e Efficient Reinforcement Learning using Human Priors</b></div><div><br></d=
+iv><div>Competition website: <a href=3D"http://minerl.io/competition/" targ=
+et=3D"_blank">http://minerl.io/competition/</a>=C2=A0</div><div><br></div><=
+div>Competition Twitter: @minerl_official</div><div><b><br></b></div><div><=
+b>Abstract:</b></div><div><br></div><div>Although deep reinforcement learni=
+ng has led to breakthroughs in many difficult domains, these successes have=
+ required an ever-increasing number of samples. Many of these systems canno=
+t be applied to real-world problems, where environment samples are expensiv=
+e. Resolution of these limitations requires new, sample-efficient methods. =
+To facilitate research in this direction, we are holding the MineRL Competi=
+tion on Sample Efficient Reinforcement Learning using Human Priors.</div><d=
+iv><br></div><div>The primary goal of this competition is to foster the dev=
+elopment of algorithms which can efficiently leverage human demonstrations =
+to drastically reduce the number of samples needed to solve complex, hierar=
+chical, and sparse environments. Participants will compete to develop syste=
+ms which solve the challenging task of obtaining a diamond in Minecraft usi=
+ng a limited number of samples from the environment.</div><div><br></div><d=
+iv>This year, we have two competition tracks: the Demonstrations and Enviro=
+nment track and the Demonstrations Only track. In the former track, competi=
+tors may use the MineRL dataset and 8 million environment interactions to t=
+rain their agents. In the latter track, competitors cannot use any environm=
+ent interactions to train their agent: they must rely solely on the MineRL-=
+v0 dataset.</div><div><br></div><div><b>Important Dates:</b></div><div><br>=
+</div><div>Jul 1, 2020:=C2=A0 Round 1 Begins. Participants invited to downl=
+oad starting materials and baseline and to begin developing their submissio=
+n.=C2=A0</div><div><br></div><div>Sep, 2020: Round 1 Ends. Submissions for =
+consideration into entry into the final round are closed. Models will be ev=
+aluated by competition organizers. Official results posted.</div><div><br><=
+/div><div>Sep, 2020: Round 2 Begins. Finalists invited to submit their mode=
+ls against the held out validation texture pack.</div><div><br></div><div>N=
+ov, 2020: Round 2 Ends. Submissions for finalists are closed. Organizers tr=
+ain finalists latest submissions for evaluation. Official results posted.=
+=C2=A0</div><div><br></div><div>Dec 6, 2020:=C2=A0 NeurIPS 2020! Winning te=
+ams invited to the (virtual) conference to present their results. Awards di=
+stributed.</div><div><br></div><div><b>Organizers:</b></div><div><br></div>=
+<div>William H. Guss, Brandon Houghton, Stephanie Milani, Nicholay Topin, R=
+uslan Salakhutdinov, John Schulman, Mario Ynocente Castro, Crissman Loomis,=
+ Keisuke Nakata, Shinya Shiroshita, Avinash Ummadisingu, Sharada Mohanty, S=
+am Devlin, Noboru Sean Kuno, and Oriol Vinyals.</div><div><br></div><div><b=
+>Advisors:</b></div><div><br></div><div>Fei Fang, Zachary Chase Lipton, Man=
+uela Veloso, David Ha, Chelsea Finn, Anca Dragan, and Sergey Levine.</div>
+
+<p></p>
+
+-- <br>
+You received this message because you are subscribed to the &quot;Reinforce=
+ment Learning Mailing List&quot; group.<br>
+To post to this group, send email to <a href=3D"mailto:rl-list@googlegroups=
+.com" target=3D"_blank">rl-list@googlegroups.com</a><br>
+To unsubscribe from this group, send email to<br>
+<a href=3D"mailto:rl-list-unsubscribe@googlegroups.com" target=3D"_blank">r=
+l-list-unsubscribe@googlegroups.com</a><br>
+For more options, visit this group at<br>
+<a href=3D"http://groups.google.com/group/rl-list?hl=3Den" target=3D"_blank=
+">http://groups.google.com/group/rl-list?hl=3Den</a><br>
+--- <br>
+You received this message because you are subscribed to the Google Groups &=
+quot;Reinforcement Learning Mailing List&quot; group.<br>
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:rl-list+unsubscribe@googlegroups.com" target=3D"_=
+blank">rl-list+unsubscribe@googlegroups.com</a>.<br>
+To view this discussion on the web visit <a href=3D"https://groups.google.c=
+om/d/msgid/rl-list/ec3a7d46-bd3b-40fc-bbb0-8edc733646b8n%40googlegroups.com=
+?utm_medium=3Demail&amp;utm_source=3Dfooter" target=3D"_blank">https://grou=
+ps.google.com/d/msgid/rl-list/ec3a7d46-bd3b-40fc-bbb0-8edc733646b8n%40googl=
+egroups.com</a>.<br>
+</div></div>
+
+<p></p>
+
+-- <br />
+You received this message because you are subscribed to the Google Groups &=
+quot;iil-current&quot; group.<br />
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:iil-current+unsubscribe@googlegroups.com">iil-cur=
+rent+unsubscribe@googlegroups.com</a>.<br />
+To view this discussion on the web visit <a href=3D"https://groups.google.c=
+om/d/msgid/iil-current/CAJ0BqjjPNzVkEoqSDPLcmSjdXRZSZyNLR5J9X3FqQJWe%3DOP68=
+Q%40mail.gmail.com?utm_medium=3Demail&utm_source=3Dfooter">https://groups.g=
+oogle.com/d/msgid/iil-current/CAJ0BqjjPNzVkEoqSDPLcmSjdXRZSZyNLR5J9X3FqQJWe=
+%3DOP68Q%40mail.gmail.com</a>.<br />
+
+--00000000000097945a05a9f3f029--
