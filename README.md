@@ -61,9 +61,9 @@
    *  Observations and inference.
    *  Playing with Replay memory and Target network  .
    
-   <object data="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA3/RL_Assignment_3.pdf" width="700px" height="700px">
-    <embed src="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA3/RL_Assignment_3.pdf">
-   <p><b>Note:</b> For more detailed analysis of each observation and inferernce drawn from it, Please have a look at full report  <a href="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA3/RL_Assignment_3.pdf">Click here</a>.</p>
+   <object data="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA3/RL_Programming_Assignment_3.pdf " width="700px" height="700px">
+    <embed src="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA3/RL_Programming_Assignment_3.pdf ">
+   <p><b>Note:</b> For more detailed analysis of each observation and inferernce drawn from it, Please have a look at full report  <a href="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA3/RL_Programming_Assignment_3.pdf ">Click here</a>.</p>
     </embed>
    </object>
     
