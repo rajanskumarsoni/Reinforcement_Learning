@@ -40,7 +40,7 @@
    
    
    
-3. <b>cs18s038_PA3 Course Project</b>
+3.<b>cs18s038_PA3 Course Project</b>
     
     
     
