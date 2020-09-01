@@ -31,7 +31,7 @@
       *  Trajectory and policy.
       *  Inference from observation .
     
-    <object data="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_2.pdf" width="700px" height="700px">
+      <object data="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_2.pdf" width="700px" height="700px">
     <embed src="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_2.pdf">
    <p><b>Note:</b> For more detailed analysis of each observation and inferernce drawn from it, Please have a look at full report  <a href="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_2.pdf">Click here</a>.</p>
     </embed>
