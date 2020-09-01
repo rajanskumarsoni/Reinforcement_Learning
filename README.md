@@ -6,6 +6,7 @@
     * Implementation of UCB1 algorithm and comparing with epsilon-greedy and soft-maxand related plots.
     * Implementation  of  Median  algorithm  and  comparing  with epsilon-greedy,  soft-maxand UCB1 and related plots.
     * Comparison of the above four algorithm as the number of arm grows.
+    ### Note: For more details. Please have a look on the report with full details.
 2. cs18s038_PA2 Course Project
     #### PUDDLE WORLD! ####
     
