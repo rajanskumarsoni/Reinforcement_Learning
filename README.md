@@ -6,7 +6,11 @@
     * Implementation of UCB1 algorithm and comparing with epsilon-greedy and soft-maxand related plots.
     * Implementation  of  Median  algorithm  and  comparing  with epsilon-greedy,  soft-maxand UCB1 and related plots.
     * Comparison of the above four algorithm as the number of arm grows.
-    ### Note: For more details. Please have a look on the report with full details.
+     <object data="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_1.pdf" width="700px" height="700px">
+    <embed src="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_1.pdf">
+   <p><b>Note:</b> For more detailed analysis of each observation and inferernce drawn from it, Please have a look at full report  <a href="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_1.pdf">Click here</a>.</p>
+    </embed>
+   </object>
 2. cs18s038_PA2 Course Project
     #### PUDDLE WORLD! ####
     
@@ -27,9 +31,9 @@
       *  Trajectory and policy.
       *  Inference from observation .
     
-    <object data="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_3.pdf" width="700px" height="700px">
-    <embed src="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_3.pdf">
-   <p><b>Note:</b> For more detailed analysis of each observation and inferernce drawn from it, Please have a look at full report  <a href="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_3.pdf">Click here</a>.</p>
+    <object data="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_2.pdf" width="700px" height="700px">
+    <embed src="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_2.pdf">
+   <p><b>Note:</b> For more detailed analysis of each observation and inferernce drawn from it, Please have a look at full report  <a href="https://github.com/rajanskumarsoni/Reinforcement_Learning/blob/master/cs18s038_PA2/RL_Assignment_2.pdf">Click here</a>.</p>
     </embed>
    </object>
     
